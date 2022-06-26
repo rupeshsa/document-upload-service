@@ -1,8 +1,8 @@
 # Document Upload Service
-Application is created using MySql Database, following table need to created.
+Application is created using MySql Database, following table need to be created.
 
 	CREATE TABLE files (
-    		id varchar(200), 
+    	id varchar(200), 
 		name varchar(200),
 		type varchar(200), 
 		data blob,
@@ -15,9 +15,10 @@ Application is created using MySql Database, following table need to created.
 	spring.datasource.username= root
 	spring.datasource.password= 123456
 
-# Sonar lint plugin for eclipse can be used to to check code quality.
+# Linting can be done using Sonar lint plugin for eclipse to check code quality.
 
 ## Run application
+Database service needs to be running before starting applications
 ```
 mvn spring-boot:run
 ```
