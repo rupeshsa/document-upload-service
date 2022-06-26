@@ -10,7 +10,12 @@ Application is created using MySql Database, following table need to created.
 		comment varchar(500),
 		upload_date date
 	);
+# Database details
+	spring.datasource.url= jdbc:mysql://localhost:3306/testdb?useSSL=false
+	spring.datasource.username= root
+	spring.datasource.password= 123456
 
+# Sonar lint plugin for eclipse can be used to to check code quality.
 
 ## Run application
 ```
